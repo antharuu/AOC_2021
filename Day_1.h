@@ -13,6 +13,8 @@ public:
     int get_increased_count() const;
 
     void data_from(int day, bool test);
+
+    int get_measurement_increased_count();
 };
 
 
