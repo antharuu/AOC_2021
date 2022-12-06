@@ -1,7 +1,7 @@
 #include <iostream>
 #include <numeric>
 #include "Day_1.h"
-#include "Input.h"
+#include "../../Input.h"
 
 Day_1::Day_1() {
     data_from(1, false);
