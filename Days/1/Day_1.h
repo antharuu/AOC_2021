@@ -1,6 +1,9 @@
+//
+// Created by Antharuu on 05/12/2022.
+//
+
 #ifndef AOC_DAY_1_H
 #define AOC_DAY_1_H
-
 
 #include <vector>
 

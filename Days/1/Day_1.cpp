@@ -1,3 +1,7 @@
+//
+// Created by Antharuu on 05/12/2022.
+//
+
 #include <iostream>
 #include <numeric>
 #include "Day_1.h"
