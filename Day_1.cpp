@@ -2,16 +2,14 @@
 #include "Day_1.h"
 #include "Input.h"
 
-using namespace std;
-
 Day_1::Day_1() {
     data_from(1, false);
 
     int result = get_increased_count();
     int result2 = get_measurement_increased_count();
 
-    cout << "Result   : " << result << endl;
-    cout << "Result 2 : " << result2 << endl;
+    std::cout << "Result   : " << result << std::endl;
+    std::cout << "Result 2 : " << result2 << std::endl;
 }
 
 int Day_1::get_increased_count() const {
@@ -28,10 +26,10 @@ int Day_1::get_increased_count() const {
 
 int Day_1::get_measurement_increased_count() {
     int count = 0, lastSum = 0;
-    vector<vector<int>> measurements;
+    std::vector<std::vector<int>> measurements;
 
     for (int i = 0; i < input.size(); i++) {
-        vector<int> measurement;
+        std::vector<int> measurement;
 
         measurement.push_back(input[i]);
         if (input.size() > i + 1) measurement.push_back(input[i + 1]);
@@ -40,8 +38,8 @@ int Day_1::get_measurement_increased_count() {
         measurements.push_back(measurement);
     }
 
-    vector<int> sums;
-    for (const vector<int> &measurement: measurements) {
+    std::vector<int> sums;
+    for (const std::vector<int> &measurement: measurements) {
         int sum = 0;
         for (int i: measurement) {
             sum += i;
@@ -60,7 +58,7 @@ int Day_1::get_measurement_increased_count() {
 
 
 void Day_1::data_from(int day, bool test = false) {
-    vector<string> tmp_inputs = get_input(day, test);
+    std::vector<std::string> tmp_inputs = get_input(day, test);
 
     for (const auto &tmp_input: tmp_inputs) {
         input.push_back(stoi(tmp_input));
