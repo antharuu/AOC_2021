@@ -7,6 +7,11 @@
 
 #include <vector>
 
+struct Instruction {
+    std::string key;
+    int value;
+};
+
 class Day_2 {
 public:
     Day_2();
@@ -14,6 +19,13 @@ public:
     std::vector<std::string> input;
 
     void data_from(int day, bool test);
+private:
+    int position = 0;
+    int depth = 0;
+
+    int get_step_1();
+
+    static Instruction get_instruction(const std::string& basicString);
 };
 
 
