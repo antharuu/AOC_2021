@@ -22,11 +22,12 @@ public:
 private:
     int position = 0;
     int depth = 0;
+    int aim = 0;
 
     int get_step_1();
+    int get_step_2();
 
     static Instruction get_instruction(const std::string& basicString);
 };
-
 
 #endif //AOC_DAY_2_H
