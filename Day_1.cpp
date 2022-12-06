@@ -1,4 +1,5 @@
 #include <iostream>
+#include <numeric>
 #include "Day_1.h"
 #include "Input.h"
 
@@ -40,11 +41,7 @@ int Day_1::get_measurement_increased_count() {
 
     std::vector<int> sums;
     for (const std::vector<int> &measurement: measurements) {
-        int sum = 0;
-        for (int i: measurement) {
-            sum += i;
-        }
-        sums.push_back(sum);
+        sums.push_back(std::accumulate(measurement.begin(), measurement.end(), 0));
     }
 
 
