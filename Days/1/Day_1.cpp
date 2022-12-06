@@ -59,7 +59,7 @@ int Day_1::get_measurement_increased_count() {
 
 
 void Day_1::data_from(int day, bool test = false) {
-    std::vector<std::string> tmp_inputs = get_input(day, test);
+    std::vector<std::string> tmp_inputs = Input::get_input(day, test);
     input.resize(tmp_inputs.size());
     for (const auto &tmp_input: tmp_inputs) {
         input.push_back(stoi(tmp_input));

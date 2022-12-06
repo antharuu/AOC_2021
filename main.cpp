@@ -1,8 +1,9 @@
 #include <iostream>
-#include "Days/1/Day_1.h"
+#include "Days/2/Day_2.h"
+#include "Input.h"
 
 int main() {
-    Day_1 day_1;
+    Day_2 day_2;
 
     return 0;
 }
